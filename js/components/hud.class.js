@@ -56,18 +56,38 @@ var HUD = {
     $('#'+this.container).append('<div id="hud"></div>');
     $('#hud').append(
       '<div>'+
-      '    <h2>Infos</h2>'+
-      '     Dist. Sol <span id="distsol"></span>'+
-      '    <div id="coords" class="coords">'+
-      '      <span id="cx"></span><span id="cy"></span><span id="cz"></span></div>'+
-      '      <p id="infos"></p>'+
-      '    </div>'+
-      /*'  <div id="search">'+
-      '    <h2>Search</h2>'+
-      '    <input type="text" />'+
-      '  </div>'+*/
+      '    <h3>Map of the Imperium</h3>'+
+      '<br>'+
+      '</div>'
+    );
+    $('#hud').append(
+      '<div>'+
       '  <div id="filters">'+
+	  '</br>'+
       '  </div>'+
+      '</div>'
+    );
+	$('#hud').append(
+      '<br>'+
+      '<br>'+
+	  '<br>'+
+      '<br>'+
+	  '<div>'+
+      '    Based on <a href="https://github.com/gbiobob/ED3D-Galaxy-Map">ED3D-Galaxy-Map</a> by <a href="https://github.com/gbiobob/">gbiobob</a>'+
+      '<br>'+
+      '<br>'+
+      '    Plenet information from <a href="http://warhammer40k.wikia.com/wiki/Planets_of_Warhammer_40,000">warhammer40k.wikia.com</a>'+
+      '<br>'+
+      '<br>'+
+      '    Planet locations from a mixture of guesswork and the follwoing maps:'+ 
+	  '<br>'+
+	  '<a href="http://media.moddb.com/images/groups/1/3/2055/40kmap.jpg">Map 1</a>'+
+	  '<br>'+
+	  '<a href="http://vignette3.wikia.nocookie.net/warhammer40k/images/1/17/Wh40k_starmap.jpg">Map 2</a>'+
+	  '<br>'+
+	  '<a href="https://unequivocalhorizon.files.wordpress.com/2011/01/liberastartesstarmapver2.png">Map 3</a>'+
+      '<br>'+
+      '<br>'+
       '</div>'
     );
 
@@ -135,7 +155,7 @@ var HUD = {
         case '3d':
           Ed3d.isTopView = false;
           var moveFrom = {x: camera.position.x, y: camera.position.y , z: camera.position.z};
-          var moveCoords = {x: controls.target.x-100, y: controls.target.y+500, z: controls.target.z+500};
+          var moveCoords = {x: controls.target.x+12000, y: controls.target.y+12000, z: controls.target.z+15000};
           HUD.moveCamera(moveFrom,moveCoords);
           break;
 
@@ -356,11 +376,6 @@ var HUD = {
 
   },
 
-
-  /**
-   * Init filter list
-   */
-
   'initFilters' : function(categories) {
 
     Loader.update('HUD Filter...');
@@ -369,66 +384,19 @@ var HUD = {
     $.each(categories, function(typeFilter, values) {
 
       if(typeof values === "object" ) {
-
         var groupId = 'group_'+grpNb;
-        var nbFilters = values.length;
-        var count = 0;
-        var visible = true;
 
         $('#filters').append('<h2>'+typeFilter+'</h2>');
         $('#filters').append('<div id="'+groupId+'"></div>');
 
         $.each(values, function(key, val) {
-
-          visible = true;
-
-          //-- Manage view limit if activated
-
-          if(Ed3d.categoryAutoCollapseSize !== false) {
-            count++;
-            if(count>Ed3d.categoryAutoCollapseSize) visible = false;
-          }
-
-          //-- Add filter
-
-          HUD.addFilter(groupId, key, val, visible);
-          Ed3d.catObjs[key] = [];
-
+          HUD.addFilter(groupId, key, val);
+          Ed3d.catObjs[key] = []
         });
-
         grpNb++;
-
-        //-- If more childs than 'categoryAutoCollapseSize' value
-        //-- add the button to toggle items
-
-        if(visible==false) {
-
-          $('#'+groupId).append(
-            '<a class="show_childs">'+
-            '+ See more' +
-            '</a>'
-          ).click(function(){
-            HUD.expandFilters(groupId);
-          });
-
-        }
       }
 
     });
-
-
-  },
-
-  /**
-   * Expand filter
-   */
-
-  'expandFilters' : function(groupId) {
-
-    $('#'+groupId)
-      .addClass('open');
-
-    $('#hud').addClass('enlarge');
 
 
   },
@@ -447,26 +415,19 @@ var HUD = {
   /**
    *
    */
-  'addFilter' : function(groupId, idCat, val, visible) {
+  'addFilter' : function(groupId, idCat, val) {
 
     //-- Add material, if custom color defined, use it
     var back = '#fff';
-    var addClass = '';
-
     if(val.color != undefined) {
       Ed3d.addCustomMaterial(idCat, val.color);
       back = '#'+val.color;
     }
 
-    if(!visible) {
-      addClass += ' hidden';
-    }
-
     //-- Add html link
     $('#'+groupId).append(
-      '<a class="map_filter'+addClass+'" data-active="1" data-filter="' + idCat + '">'+
-      '<span class="check" style="background:'+back+'"> </span>' + val.name +
-      '</a>'
+      '<a class="map_filter" data-active="1" data-filter="' + idCat + '">'+
+      '<span class="check" style="background:'+back+'"> </span>' + val.name + '</a>'
     );
   },
 

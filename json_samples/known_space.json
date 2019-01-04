@@ -1,0 +1,876 @@
+{
+  "categories": {
+    "Factions": {
+      "1": {
+        "name": "Imperial",
+        "color": "5ABDFC"
+      },
+      "2": {
+        "name": "Adeptus Astartes",
+        "color": "774FD4"
+      },
+      "3": {
+        "name": "Adeptus Mechanicus",
+        "color": "957ADC"
+      },
+      "4": {
+        "name": "Traitor",
+        "color": "645C16"
+      },
+      "5": {
+        "name": "Tau",
+        "color": "4EB19A"
+      },
+      "6": {
+        "name": "Eldar",
+        "color": "4EB19A"
+      },
+      "7": {
+        "name": "Tyranid",
+        "color": "4EB19A"
+      },
+      "8": {
+        "name": "Ork",
+        "color": "4EB19A"
+      }
+
+    },
+    "Segmentum": {
+      "11": {
+        "name": "Solar",
+        "color": "5ABDFC"
+      },
+      "12": {
+        "name": "Pacificus",
+        "color": "774FD4"
+      },
+      "13": {
+        "name": "Tempestus",
+        "color": "957ADC"
+      },
+      "14": {
+        "name": "Obscurus",
+        "color": "645C16"
+      },
+      "15": {
+        "name": "Ultima",
+        "color": "4EB19A"
+      }
+
+    },
+    "Regions": {
+      "21": {
+        "name": "Eye of Terror",
+        "color": "5ABDFC"
+      },
+      "22": {
+        "name": "Malestron",
+        "color": "774FD4"
+      },
+      "23": {
+        "name": "Sabbat Worlds",
+        "color": "957ADC"
+      },
+      "24": {
+        "name": "Ultramar",
+        "color": "645C16"
+      }
+
+    }
+  },
+  "systems": [
+    {
+      "name": "Terra",
+      "coords": {
+        "x": "0",
+        "y": "0",
+        "z": "0"
+      },
+      "cat": [
+        1
+      ],
+      "infos": "Terra - Homeworld of the Imperium"
+    },
+	{
+      "name": "Cadia",
+      "coords": {
+        "x": "-14500",
+        "y": "1800",
+        "z": "0"
+      },
+      "cat": [
+        1,14,21
+      ],
+      "infos": "Cadia"
+    },
+	{
+      "name": "Accatran",
+      "coords": {
+        "x": "15013",
+        "y": "0",
+        "z": "6378"
+      },
+      "cat": [
+        3,1,15
+      ],
+      "infos": ""
+    },
+	{
+      "name": "Agripinaa",
+      "coords": {
+        "x": "-13585",
+        "y": "400",
+        "z": "-1562"
+      },
+      "cat": [
+        1,14,21
+      ],
+      "infos": "Agripinaa"
+    },
+	{
+      "name": "Angelis",
+      "coords": {
+        "x": "-23332",
+        "y": "0",
+        "z": "42830"
+      },
+      "cat": [
+        8,15
+      ],
+      "infos": "Angelis, also known to its Ork population as Gorkamorka"
+    },
+	{
+      "name": "Arkhona",
+      "coords": {
+        "x": "-33591",
+        "y": "0",
+        "z": "3560"
+      },
+      "cat": [
+        1,14
+      ],
+      "infos": "Arkhona"
+    },
+	{
+      "name": "Armageddon",
+      "coords": {
+        "x": "-7176",
+        "y": "0",
+        "z": "2780"
+      },
+      "cat": [
+        1,11
+      ],
+      "infos": "Armageddon"
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila"
+    },
+	{
+      "name": "Aurelia",
+      "coords": {
+        "x": "31336",
+        "y": "0",
+        "z": "16819"
+      },
+      "cat": [
+        2,1,15
+      ],
+      "infos": "Aurelia"
+    },
+	{
+      "name": "Baal",
+      "coords": {
+        "x": "-5530",
+        "y": "0",
+        "z": "38000"
+      },
+      "cat": [
+        2,1,15
+      ],
+      "infos": "Baal - Homeworld of Blood Angels"
+    },
+	{
+      "name": "Badab",
+      "coords": {
+        "x": "2500",
+        "y": "0",
+        "z": "25000"
+      },
+      "cat": [
+        4,15,22
+      ],
+      "infos": "<h2>++Redacted++</h2><p>Your request for information has been forwarded to your local sector Inquisitorial office</p>"
+    },
+	{
+      "name": "Badlanding",
+      "coords": {
+        "x": "23715",
+        "y": "0",
+        "z": "9832"
+      },
+      "cat": [
+        8,13
+      ],
+      "infos": "Badlanding"
+    },
+	{
+      "name": "Bakka",
+      "coords": {
+        "x": "16001",
+        "y": "0",
+        "z": "3301"
+      },
+      "cat": [
+        3,1,13
+      ],
+      "infos": "Bakka"
+    },
+	{
+      "name": "Barbarus",
+      "coords": {
+        "x": "29769",
+        "y": "0",
+        "z": "-837"
+      },
+      "cat": [
+        4,15
+      ],
+      "infos": "<h2>++Redacted++</h2><p>Your request for information has been forwarded to your local sector Inquisitorial office</p>"
+    },
+	{
+      "name": "Belis Corona",
+      "coords": {
+        "x": "1523",
+        "y": "0",
+        "z": "22804"
+      },
+      "cat": [
+        4,15
+      ],
+      "infos": "Belis Corona"
+    },
+	{
+      "name": "Bellerophon's Fall",
+      "coords": {
+        "x": "987",
+        "y": "0",
+        "z": "23671"
+      },
+      "cat": [
+        4,15
+      ],
+      "infos": "Bellerophon's Fall"
+    },
+	{
+      "name": "Betalis III",
+      "coords": {
+        "x": "-4051",
+        "y": "0",
+        "z": "2952"
+      },
+      "cat": [
+        1,11
+      ],
+      "infos": "Betalis III"
+    },
+	{
+      "name": "Black Reach",
+      "coords": {
+        "x": "19551",
+        "y": "0",
+        "z": "45021"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Black Reach"
+    },
+	{
+      "name": "Bodt",
+      "coords": {
+        "x": "9037",
+        "y": "0",
+        "z": "11808"
+      },
+      "cat": [
+        4,15
+      ],
+      "infos": "Bodt"
+    },
+	{
+      "name": "Caliban",
+      "coords": {
+        "x": "-21060",
+        "y": "0",
+        "z": "-2688"
+      },
+      "cat": [
+        2,1,14
+      ],
+      "infos": "Caliban"
+    },
+	{
+      "name": "Calth",
+      "coords": {
+        "x": "13375",
+        "y": "0",
+        "z": "49819"
+      },
+      "cat": [
+        2,1,15
+      ],
+      "infos": "Calth"
+    },
+	{
+      "name": "Catachan",
+      "coords": {
+        "x": "1396",
+        "y": "0",
+        "z": "7690"
+      },
+      "cat": [
+        1,11
+      ],
+      "infos": "Catachan"
+    },
+	{
+      "name": "Cerix Magnus",
+      "coords": {
+        "x": "-15550",
+        "y": "0",
+        "z": "-6040"
+      },
+      "cat": [
+        3,14
+      ],
+      "infos": "Cerix Magnus"
+    },
+	{
+      "name": "Certus Minor",
+      "coords": {
+        "x": "-6574",
+        "y": "0",
+        "z": "-725"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Certus Minor"
+    },
+	{
+      "name": "Chaeronia",
+      "coords": {
+        "x": "-15113",
+        "y": "0",
+        "z": "-878"		
+      },
+      "cat": [
+        4,14,21
+      ],
+      "infos": "Chaeronia"
+    },
+	{
+      "name": "Charadon",
+      "coords": {
+        "x": "22400",
+        "y": "0",
+        "z": "10600"
+      },
+      "cat": [
+        8,15
+      ],
+      "infos": "Charadon"
+    },
+	{
+      "name": "Chemos",
+      "coords": {
+        "x": "8342",
+        "y": "0",
+        "z": "8342"
+      },
+      "cat": [
+        4,15
+      ],
+      "infos": "Chemos"
+    },
+	{
+      "name": "Cinchare",
+      "coords": {
+        "x": "-22533",
+        "y": "0",
+        "z": "-10714"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Cinchare"
+    },
+	{
+      "name": "Colchis",
+      "coords": {
+        "x": "3364",
+        "y": "0",
+        "z": "-11541"
+      },
+      "cat": [
+        4,12
+      ],
+      "infos": "Colchis"
+    },
+	{
+      "name": "Cretacia",
+      "coords": {
+        "x": "27995",
+        "y": "0",
+        "z": "-5056"
+      },
+      "cat": [
+        2,1,13
+      ],
+      "infos": "Cretacia"
+    },
+	{
+      "name": "Cthonia",
+      "coords": {
+        "x": "5140",
+        "y": "0",
+        "z": "-2400"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Cthonia"
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    },
+	{
+      "name": "Attila",
+      "coords": {
+        "x": "17776",
+        "y": "0",
+        "z": "28472"
+      },
+      "cat": [
+        1,15
+      ],
+      "infos": "Attila is a Feudal World of the Imperium of Man that maintains a late Iron Age civilisation and almost no advanced Imperial technology. This barbaric world is also the homeworld of the famed Rough Riders of Attila Mounted Regiments of the Imperial Guard."
+    }
+	
+  ]
+}

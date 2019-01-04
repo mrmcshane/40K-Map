@@ -17,16 +17,22 @@ body {
   height: 100%;
   margin: 0 auto;
   overflow: hidden;
+    position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 999 !important;
 }
+
+
+
 
 #threedmap {
   width: 100%;
   height: 800px;
 }
 
-#hud {
-  transition: width 2s;
-}
 #hud,
 #systemDetails {
   font-weight: normal;
@@ -49,12 +55,6 @@ body {
   -webkit-box-sizing: border-box;
 }
 
-#hud.enlarge {
-  background-color: rgba(10,10,10,0.7);
-  width: 90%;
-  max-width: 1200px;
-}
-
 #systemDetails.popup-detail {
   top: 10%;
   left: 10%;
@@ -67,16 +67,33 @@ body {
   margin-bottom: 20px;
   clear: both;
 }
+#hud h3 {
+  font-weight: bold;
+  color: #eee;
+  font-size: 1rem;
+  margin: 0 0 5px;
+  text-shadow: 1px 1px 2px rgb(0,0,0);
+  position: fixed;
+  top: 2%;
+  left: 0;
+  width: 100%;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #ccc;
+  font-family: "Orbitron";
+}
 #hud h2 {
   font-weight: bold;
   color: #eee;
   font-size: 1rem;
   border-bottom: 1px solid #eee;
   margin: 0 0 5px;
+  margin-top:10px;
   text-shadow: 1px 1px 2px rgb(0,0,0);
 }
 #hud p {
-  margin: 0 0 3px;
+  margin: 5px;
+  padding: 10px;
 }
 #hud input {
   box-sizing: border-box;
@@ -151,33 +168,6 @@ body {
 .map_filter.disabled .check {
   background: #333 !important;
 }
-
-/* Collapse map filter */
-
-.show_childs {
-  text-decoration: underline;
-}
-
-.map_filter.hidden {
-  display: none;
-}
-
-.open .map_filter.hidden {
-  display: inline-block;
-}
-
-
-#hud.enlarge #filters > div.open {
-  columns: 250px;
-  -moz-columns: 250px;
-  -webkit-columns: 250px;
-}
-#hud.enlarge .map_filter {
-  width: 100%;
-  max-width: 250px;
-  clear: both;
-}
-
 
 /* -------------------------------------------------------------------------- */
 /* HUD system details */

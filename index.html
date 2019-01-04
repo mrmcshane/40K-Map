@@ -4,7 +4,8 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-  <title>Milky Way</title>
+  <title>Map of the Imperium</title>
+  <link href="css/orb.css" rel="stylesheet" type="text/css" />
   <link href="http://fonts.googleapis.com/css?family=Orbitron:400" rel="stylesheet" type="text/css" />
   <!-- Custom CSS -->
   <style type="text/css">
@@ -51,7 +52,6 @@
 
   <body>
 
-    <h1>Imperial Navy - Map of the Imperium</h1>
 
     <div id="edmap"></div>
 
@@ -69,14 +69,10 @@
   <script src="js/ed3dmap.js?v=5"></script>
   <script type="text/javascript">
 
-    var d = new Date()
-    d.setDate(d.getDate() - 1);
-    var queryDate = d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate()+' '+d.getHours()+':00:00';
 
     Ed3d.init({
         container   : 'edmap',
-       // jsonPath    : "http://www.edsm.net/api-v1/systems?coords=1&known=1&startdatetime="+queryDate,
-        jsonPath    : "json_samples/galnet.json",
+        jsonPath    : "json_samples/known_space.json",
         withHudPanel : true,
         hudMultipleSelect : false,
         effectScaleSystem : [50,10000],
@@ -84,6 +80,7 @@
         showGalaxyInfos: true,
         systemColor: '#FF9D00'
     });
+
 
   </script>
 
