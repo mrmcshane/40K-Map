@@ -1,5 +1,5 @@
 # 40K Map
-3D interactive map of the imperium based on the work of gbiobob/ED3D-Galaxy-Map.
+3D interactive map of the imperium based on the brilliant work of gbiobob/ED3D-Galaxy-Map.
 
 ## Demo
 * [40K Map](http://map.ns1.ovh/)
